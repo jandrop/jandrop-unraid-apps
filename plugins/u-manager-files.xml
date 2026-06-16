@@ -1,0 +1,29 @@
+<Plugin>
+  <Name>U-Manager Files</Name>
+
+  <Overview>
+    A native Unraid file browser. Single Go binary that exposes /mnt/user (or any path you pick) through a REST API and a bundled web UI.
+
+    - Browse, copy, move, rename, archive, search and bulk-edit files from any device on your LAN.
+    - Image and video thumbnails out of the box. Optional hardware transcoding (Intel iGPU, VA-API).
+    - Realtime updates over WebSocket so external changes (downloads, SMB writes) reflect instantly.
+    - Logs in with your Unraid account (single sign-on). Optional static API key for scripts.
+    - No Docker required. Runs as a native plugin service.
+  </Overview>
+
+  <PluginURL>https://github.com/jandrop/u-manager-files-releases/releases/latest/download/UManagerFiles.plg</PluginURL>
+
+  <PluginAuthor>jandrop</PluginAuthor>
+
+  <Project>https://github.com/jandrop/u-manager-files-releases</Project>
+
+  <ReadMe>https://raw.githubusercontent.com/jandrop/u-manager-files-releases/main/README.md</ReadMe>
+
+  <Discord>https://discord.gg/zfwWug8m</Discord>
+
+  <Category>Tools:</Category>
+
+  <Icon>https://raw.githubusercontent.com/jandrop/u-manager-files-releases/main/assets/icon.png</Icon>
+
+  <License>MIT</License>
+</Plugin>
