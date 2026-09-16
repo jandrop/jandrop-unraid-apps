@@ -1,32 +1,24 @@
-# Community Apps Starter Template
+# jandrop's Unraid apps
 
-Use this repository as a GitHub template when you want a clean starting point for a new Community Apps submission repository.
+Community Applications templates for the U-Manager family of Unraid plugins.
+One XML file per plugin under `plugins/`; `ca_profile.xml` in the root is the
+repository entry Community Applications shows.
 
-## Quick Start
+| Plugin | What it does | Source |
+| --- | --- | --- |
+| **U-Manager Files** | Native file browser for your shares, with a REST API and a web UI. | [u-manager-files-releases](https://github.com/jandrop/u-manager-files-releases) |
+| **U-Manager Companion** | Serves the U-Manager mobile app the Unraid API data upstream ships as a stub. | [u-manager-companion](https://github.com/jandrop/u-manager-companion) |
+| **U-Manager Push Notifications** | Sends Unraid notifications to the U-Manager app as push notifications. | [u-manager-unraid-plugin](https://github.com/jandrop/u-manager-unraid-plugin) |
 
-1. Click **Use this template** on GitHub and create your own repository.
-2. Replace the placeholder values in `ca_profile.xml`, `templates/example-app.xml`, and `plugins/example-plugin.xml`.
-3. Replace `icon.svg` with your own repository icon, or update `ca_profile.xml` to point at a hosted icon you control.
-4. Keep one XML file per Docker app under `templates/`.
-5. Keep one XML wrapper per plugin under `plugins/`.
-6. Delete the example files you do not need.
-7. Commit and push your repository.
-8. Run **Validate** and **Scan** in the Community Apps submit flow: `/submit`.
+Each plugin is built and released from its own repository. This one only holds
+the templates, so a release there needs no change here: the `<PluginURL>` entries
+point at `releases/latest`.
 
-## Starter Files
+Support and feature requests go through the GitHub Issues of the plugin's own
+repository, or the [Discord](https://discord.gg/zfwWug8m).
 
-- `README.md`: onboarding notes for whoever maintains the repository.
-- `LICENSE`: starter MIT license text. Replace the placeholder copyright line.
-- `.gitignore`: keeps common OS junk out of the repo.
-- `icon.svg`: starter repository icon referenced by `ca_profile.xml`.
-- `ca_profile.xml`: repository overview and support metadata shown in Community Apps.
-- `templates/example-app.xml`: starter Docker application template.
-- `plugins/example-plugin.xml`: starter plugin wrapper.
+## Adding a plugin
 
-## Submission Notes
-
-- Keep `ca_profile.xml` in the repository root.
-- Every Docker app entry needs a `<Repository>` tag.
-- Every plugin entry needs a `<PluginURL>` tag.
-- Keep each template's `TemplateURL` pointed at the raw GitHub URL for that exact XML file.
-- Use an OSI-approved license before submitting.
+Drop an XML file in `plugins/` with a `<PluginURL>` pointing at the `.plg` in
+that plugin's latest release, and a `<TemplateURL>` pointing at the raw URL of
+that same file. Check that every URL in it resolves, icon and README included.

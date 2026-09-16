@@ -17,6 +17,8 @@
 
   <Project>https://github.com/jandrop/u-manager-files-releases</Project>
 
+  <Support>https://github.com/jandrop/u-manager-files-releases/issues</Support>
+
   <ReadMe>https://raw.githubusercontent.com/jandrop/u-manager-files-releases/main/README.md</ReadMe>
 
   <Discord>https://discord.gg/zfwWug8m</Discord>
@@ -26,4 +28,6 @@
   <Icon>https://raw.githubusercontent.com/jandrop/u-manager-files-releases/main/assets/icon.png</Icon>
 
   <License>MIT</License>
+
+  <TemplateURL>https://raw.githubusercontent.com/jandrop/jandrop-unraid-apps/main/plugins/u-manager-files.xml</TemplateURL>
 </Plugin>

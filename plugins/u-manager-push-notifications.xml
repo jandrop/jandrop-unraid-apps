@@ -1,0 +1,31 @@
+<Plugin>
+  <Name>U-Manager Push Notifications</Name>
+
+  <Overview>
+    Delivers your Unraid notifications to the U-Manager app on iOS and Android as push notifications.
+
+    - Registers itself as a Dynamix Notifications agent, so whatever Unraid raises reaches your phone with the same subject and description.
+    - Forwards to the device whose push token you paste into the plugin settings.
+    - Needs U-Manager app 1.2.1 or newer. Earlier versions cannot generate the push token.
+  </Overview>
+
+  <PluginURL>https://github.com/jandrop/u-manager-unraid-plugin/releases/latest/download/UManager.plg</PluginURL>
+
+  <PluginAuthor>jandrop</PluginAuthor>
+
+  <Project>https://github.com/jandrop/u-manager-unraid-plugin</Project>
+
+  <Support>https://github.com/jandrop/u-manager-unraid-plugin/issues</Support>
+
+  <ReadMe>https://raw.githubusercontent.com/jandrop/u-manager-unraid-plugin/main/README.md</ReadMe>
+
+  <Discord>https://discord.gg/zfwWug8m</Discord>
+
+  <Category>Tools:</Category>
+
+  <Icon>https://raw.githubusercontent.com/jandrop/u-manager-unraid-plugin/main/plugins/dynamix/icons/umanager.png</Icon>
+
+  <License>MIT</License>
+
+  <TemplateURL>https://raw.githubusercontent.com/jandrop/jandrop-unraid-apps/main/plugins/u-manager-push-notifications.xml</TemplateURL>
+</Plugin>

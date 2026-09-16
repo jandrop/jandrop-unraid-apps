@@ -1,0 +1,29 @@
+<Plugin>
+  <Name>U-Manager Companion</Name>
+
+  <Overview>
+    Serves the U-Manager mobile app the Unraid data the official API ships as a stub or reports incorrectly.
+
+    - Adds per-disk SMART settings and utilization thresholds, live container stats and Docker template management to the GraphQL API the app already talks to.
+    - Patches are re-applied on every boot, because Unraid rebuilds the API from a read-only image. Each one is idempotent and goes away on its own once upstream ships the equivalent fix.
+    - Meant for users of the U-Manager app. It changes nothing in the Unraid web interface.
+  </Overview>
+
+  <PluginURL>https://github.com/jandrop/u-manager-companion/releases/latest/download/UManagerCompanion.plg</PluginURL>
+
+  <PluginAuthor>jandrop</PluginAuthor>
+
+  <Project>https://github.com/jandrop/u-manager-companion</Project>
+
+  <Support>https://github.com/jandrop/u-manager-companion/issues</Support>
+
+  <ReadMe>https://raw.githubusercontent.com/jandrop/u-manager-companion/main/README.md</ReadMe>
+
+  <Discord>https://discord.gg/zfwWug8m</Discord>
+
+  <Category>Tools:</Category>
+
+  <Icon>https://raw.githubusercontent.com/jandrop/u-manager-companion/main/assets/icon.png</Icon>
+
+  <TemplateURL>https://raw.githubusercontent.com/jandrop/jandrop-unraid-apps/main/plugins/u-manager-companion.xml</TemplateURL>
+</Plugin>
